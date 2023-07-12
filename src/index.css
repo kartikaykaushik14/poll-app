@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.home p{
+  padding: 15px;
+}
+
+/* sigin form */
+.signin {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.signin label {
+  text-align: left;
+  display: block;
+}
+.signin h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+.signin input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.signin button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.radio{
+  display: block;
+  cursor: pointer; 
+  user-select:none;
+  text-align: left;
+  &+.radio{
+    margin-top: 12px;
+  }
+  input{
+    display: none;
+    &+span{
+      display: inline-block; 
+      position: relative;
+      padding-left: 30px;
+      &:before{
+        content: '';
+        display: block; 
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #ccc;
+        background: #fff;
+      }
+      &:after{
+        content: '';
+        display: block; 
+        width: 10px;
+        height: 10px;
+        background: #222;
+        position: absolute;
+        border-radius: 50%;
+        top: 3px;
+        left: 3px;
+        opacity: 0;
+        transform: scale(0,0); 
+        transition: all .2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+      }
+    }
+    &:checked+span:after{
+      opacity: 1;
+      transform: scale(1,1);
+    }
+  }
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
